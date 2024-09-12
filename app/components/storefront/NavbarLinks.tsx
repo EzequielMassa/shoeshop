@@ -16,7 +16,7 @@ function NavbarLinks() {
 	const location = usePathname()
 
 	return (
-		<div className='hidden md:flex justify-center items-center gap-x-2 ml-8'>
+		<div className='flex flex-col md:flex-row  justify-center items-end md:items-center gap-x-2 ml-8'>
 			{navbarLinks.map((item) => (
 				<Link
 					key={item.id}
