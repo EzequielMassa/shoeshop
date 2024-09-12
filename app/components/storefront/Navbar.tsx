@@ -66,9 +66,16 @@ async function Navbar() {
 								) : (
 									<div className='flex flex-col md:flex-row flex-1 items-end justify-center md:justify-end md:space-x-2'>
 										<Button variant='ghost' asChild>
+											<a
+												href='https://github.com/EzequielMassa/shoeshop'
+												target='_blank'
+												rel='noopener'>
+												Read the docs
+											</a>
+										</Button>
+										<Button variant='ghost' asChild>
 											<LoginLink>Sign in</LoginLink>
 										</Button>
-										<span className='h-6 w-px bg-gray-200'></span>
 										<Button variant='ghost' asChild>
 											<RegisterLink>Create Account</RegisterLink>
 										</Button>
@@ -98,6 +105,15 @@ async function Navbar() {
 					</>
 				) : (
 					<div className='hidden md:flex md:flex-1 md:items-center  md:justify-end md:space-x-2'>
+						<Button variant='ghost' asChild>
+							<a
+								href='https://github.com/EzequielMassa/shoeshop'
+								target='_blank'
+								rel='noopener'>
+								Read the docs
+							</a>
+						</Button>
+						<span className='h-6 w-px bg-gray-200'></span>
 						<Button variant='ghost' asChild>
 							<LoginLink>Sign in</LoginLink>
 						</Button>
